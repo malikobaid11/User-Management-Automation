@@ -15,6 +15,18 @@ Ensure the following directories exist and are accessible:
 - `C:\UserManagement\Report` for generated reports.
 - `C:\UserManagement\Done` for processed files.
 
+
+## User Deletion Script
+
+### Prerequisites
+- Ensure the user running the script has permission to delete users in Active Directory.
+- Verify the Active Directory module is installed on the system.
+
+### CSV File Format
+| Username  |
+|-----------|
+| jdoe      |
+
 ## Password Reset Script
 
 ### Prerequisites
