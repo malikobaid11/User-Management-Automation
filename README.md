@@ -10,18 +10,27 @@ Automates the creation of new user accounts in Active Directory, assigning roles
 Workflow:
 
 Reads user information from CSV files in the source directory.
+
 Validates user data (e.g., email domain).
+
 Generates a secure random password for each user.
+
 Creates users in Active Directory.
+
 Logs success or errors to a report CSV file.
+
 Sends an email notification with the process report.
 
 Key Parameters:
 
 $sourceDir: Directory containing input CSV files.
+
 $workingDir: Temporary working directory for processing files.
+
 $reportDir: Directory where reports are saved.
+
 $doneDir: Directory for processed CSV files.
+
 $errorDir: Directory for problematic CSV files.
 
 Logs and Reports:
