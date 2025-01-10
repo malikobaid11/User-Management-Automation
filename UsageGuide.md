@@ -15,6 +15,20 @@ Ensure the following directories exist and are accessible:
 - `C:\UserManagement\Report` for generated reports.
 - `C:\UserManagement\Done` for processed files.
 
+## User Creation Script
+
+### Prerequisites
+- Ensure the user running the script has permission to Create users in Active Directory.
+- Verify the Active Directory module is installed on the system.
+
+### CSV File Format
+| Firstname | Lastname  |Username   |Email      |
+|-----------|-----------|-----------|-----------|
+| John      |   Doe     |   jdoe    |     jdoe@test.com|
+
+
+### Running the Script
+1. Place the `UserCreation.csv` file in the specified source path:
 
 ## User Deletion Script
 
@@ -26,6 +40,9 @@ Ensure the following directories exist and are accessible:
 | Username  |
 |-----------|
 | jdoe      |
+
+### Running the Script
+1. Place the `UserDeletion.csv` file in the specified source path:
 
 ## Password Reset Script
 
