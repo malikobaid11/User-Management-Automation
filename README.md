@@ -9,6 +9,7 @@ This project provides PowerShell scripts for managing user accounts in a directo
 ## Features
 - Automated user creation with customizable properties.
 - Secure user deletion with cleanup processes.
+- Password reset for existing users.
 - Detailed logging for auditing and debugging.
 
 ## Prerequisites
