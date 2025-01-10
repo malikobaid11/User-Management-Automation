@@ -1,99 +1,26 @@
 # User-Management-Automation
 Automation for user management in Azure AD and Active Directory Using Powershell
 
-Scripts
-1. UserCreation.ps1
+# User Management PowerShell Scripts
 
-Purpose:
-Automates the creation of new user accounts in Active Directory, assigning roles and generating reports for the process.
+## Overview
+This project provides PowerShell scripts for managing user accounts in a directory service environment. The scripts aim to simplify and automate user lifecycle management tasks.
 
-Workflow:
+## Features
+- Automated user creation with customizable properties.
+- Secure user deletion with cleanup processes.
+- Detailed logging for auditing and debugging.
 
-Reads user information from CSV files in the source directory.
+## Prerequisites
+- PowerShell 5.1 or higher.
+- Access to the required directory service (e.g., Active Directory).
+- Appropriate permissions to create and delete user accounts.
 
-Validates user data (e.g., email domain).
+## Getting Started
+1. Clone or download this repository.
+2. Navigate to the `Scripts` directory.
+3. Execute the scripts as per the instructions in the [Usage Guide](./UsageGuide.md).
 
-Generates a secure random password for each user.
-
-Creates users in Active Directory.
-
-Logs success or errors to a report CSV file.
-
-Sends an email notification with the process report.
-
-Key Parameters:
-
-$sourceDir: Directory containing input CSV files.
-
-$workingDir: Temporary working directory for processing files.
-
-$reportDir: Directory where reports are saved.
-
-$doneDir: Directory for processed CSV files.
-
-$errorDir: Directory for problematic CSV files.
-
-Logs and Reports:
-
-Success and error logs are stored in the report directory.
-
-Email notifications include detailed reports.
-
-Dependencies:
-
-Active Directory cmdlets.
-
-2. UserDeletion.ps1
-
-Purpose:
-
-Streamlines the deletion of user accounts while maintaining compliance with business rules.
-
-Workflow:
-
-Reads user information from CSV files in the source directory.
-
-Verifies that users exist and are eligible for deletion (e.g., marked as "CUSTOMER").
-
-Deletes users from Active Directory.
-
-Logs success or errors to a report CSV file.
-
-Sends an email notification with the process report.
-
-Key Parameters:
-
-$sourceDir: Directory containing input CSV files.
-
-$workingDir: Temporary working directory for processing files.
-
-$reportDir: Directory where reports are saved.
-
-$doneDir: Directory for processed CSV files.
-
-$errorDir: Directory for problematic CSV files.
-
-
-Logs and Reports:
-
-Stores a detailed report of the deletion process.
-
-Emails reports to specified recipients.
-
-Dependencies:
-
-Active Directory cmdlets.
-
-CSV File Format
-
-User Creation
-
-FirstName	LastName	Username	Email
-
-John	Doe	jdoe	jdoe@example.com
-
-User Deletion
-
-Username
-
-jdoe
+## Author
+Malik  
+Contact: malikobaidadil@gmail.com
